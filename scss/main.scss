@@ -1,0 +1,104 @@
+@import "_common.scss";
+
+body{
+  ::selection {
+    background-color: #75dfff;
+  }
+}
+
+.site-content{
+  @include flexbox();
+  @include justify-content(center);
+  @include align-items(center);
+  background-color: $--color-darkblue;
+  color: rgba($--color-white,0.9);
+  height: 100vh;
+
+  a,
+  strong{
+    color: $--color-blue;
+  }
+
+  a{
+    text-decoration: none;
+  }
+}
+
+.dz-intro{
+  span{
+    font-family: $--font-bold;
+    display: block;
+  }
+}
+
+.dz-logo{
+  font-family: $--font-bold;
+  width: 200px;
+
+  @media only screen and (min-width: 768px){
+    position: absolute;
+    top: 60px;
+  }
+
+  img{
+    width: 100%;
+  }
+}
+
+.dz-profile{
+  font-size: 18px;
+}
+
+.dz-social{
+  a{
+    color: $--color-white;
+    font-size: 24px;
+    transition: 0.4s ease-in-out;
+
+    &+a{
+      margin-left: 10px;
+    }
+
+    &:hover{
+      color: $--color-blue;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px){
+  .site-content{
+    overflow-y: auto;
+  }
+  .dz-intro{
+    font-size: 24px;
+  }
+
+  .dz-profile{
+    font-size: 16px;
+  }
+
+  .dz-logo{
+    width: 160px;
+  }
+}
+
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 812px) 
+and (-webkit-device-pixel-ratio : 3)
+and (orientation : landscape) { 
+  .site-content{
+    @include align-items(flex-start);
+    padding: 60px;
+    overflow-y: auto;
+  }
+
+  .dz-logo{
+    position: relative;
+    top: 0;
+  }
+
+  .dz-intro{
+    font-size: 28px;
+  }
+}

@@ -1,0 +1,208 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Poppins-Black";
+  src: url("../assets/fonts/Poppins-Black.eot");
+  src: url("../assets/fonts/Poppins-Black.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/Poppins-Black.woff2") format("woff2"), url("../assets/fonts/Poppins-Black.woff") format("woff"), url("../assets/fonts/Poppins-Black.ttf") format("truetype"), url("../assets/fonts/Poppins-Black.svg#Poppins-Black") format("svg");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url("../assets/fonts/Poppins-Bold.eot");
+  src: url("../assets/fonts/Poppins-Bold.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/Poppins-Bold.woff2") format("woff2"), url("../assets/fonts/Poppins-Bold.woff") format("woff"), url("../assets/fonts/Poppins-Bold.ttf") format("truetype"), url("../assets/fonts/Poppins-Bold.svg#Poppins-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins-Light";
+  src: url("../assets/fonts/Poppins-Light.eot");
+  src: url("../assets/fonts/Poppins-Light.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/Poppins-Light.woff2") format("woff2"), url("../assets/fonts/Poppins-Light.woff") format("woff"), url("../assets/fonts/Poppins-Light.ttf") format("truetype"), url("../assets/fonts/Poppins-Light.svg#Poppins-Light") format("svg");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("../assets/fonts/Poppins-Regular.eot");
+  src: url("../assets/fonts/Poppins-Regular.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/Poppins-Regular.woff2") format("woff2"), url("../assets/fonts/Poppins-Regular.woff") format("woff"), url("../assets/fonts/Poppins-Regular.ttf") format("truetype"), url("../assets/fonts/Poppins-Regular.svg#Poppins-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins-Medium";
+  src: url("../assets/fonts/Poppins-Medium.eot");
+  src: url("../assets/fonts/Poppins-Medium.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/Poppins-Medium.woff2") format("woff2"), url("../assets/fonts/Poppins-Medium.woff") format("woff"), url("../assets/fonts/Poppins-Medium.ttf") format("truetype"), url("../assets/fonts/Poppins-Medium.svg#Poppins-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "dz";
+  src: url("../assets/fonts/dz.eot?74156629");
+  src: url("../assets/fonts/dz.eot?74156629#iefix") format("embedded-opentype"), url("../assets/fonts/dz.woff2?74156629") format("woff2"), url("../assets/fonts/dz.woff?74156629") format("woff"), url("../assets/fonts/dz.ttf?74156629") format("truetype"), url("../assets/fonts/dz.svg?74156629#dz") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'dz';
+    src: url('../assets/fonts/dz.svg?74156629#dz') format('svg');
+  }
+}
+*/
+[class^=icon-]:before, [class*=" icon-"]:before {
+  font-family: "dz";
+  font-style: normal;
+  font-weight: normal;
+  speak: never;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: 0.2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: 0.2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-linkedin:before {
+  content: "";
+}
+
+/* '' */
+.icon-instagram:before {
+  content: "";
+}
+
+/* '' */
+.icon-behance:before {
+  content: "";
+}
+
+/* '' */
+body {
+  font-family: "Poppins-Regular";
+}
+
+body ::selection {
+  background-color: #75dfff;
+}
+
+.site-content {
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  background-color: #222335;
+  color: rgba(255, 255, 255, 0.9);
+  height: 100vh;
+}
+.site-content a,
+.site-content strong {
+  color: #355bf9;
+}
+.site-content a {
+  text-decoration: none;
+}
+
+.dz-intro span {
+  font-family: "Poppins-Bold";
+  display: block;
+}
+
+.dz-logo {
+  font-family: "Poppins-Bold";
+  width: 200px;
+}
+@media only screen and (min-width: 768px) {
+  .dz-logo {
+    position: absolute;
+    top: 60px;
+  }
+}
+.dz-logo img {
+  width: 100%;
+}
+
+.dz-profile {
+  font-size: 18px;
+}
+
+.dz-social a {
+  color: #fff;
+  font-size: 24px;
+  transition: 0.4s ease-in-out;
+}
+.dz-social a + a {
+  margin-left: 10px;
+}
+.dz-social a:hover {
+  color: #355bf9;
+}
+
+@media only screen and (max-width: 768px) {
+  .site-content {
+    overflow-y: auto;
+  }
+
+  .dz-intro {
+    font-size: 24px;
+  }
+
+  .dz-profile {
+    font-size: 16px;
+  }
+
+  .dz-logo {
+    width: 160px;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
+  .site-content {
+    -webkit-align-items: flex-start;
+    -moz-align-items: flex-start;
+    -ms-align-items: flex-start;
+    align-items: flex-start;
+    padding: 60px;
+    overflow-y: auto;
+  }
+
+  .dz-logo {
+    position: relative;
+    top: 0;
+  }
+
+  .dz-intro {
+    font-size: 28px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
